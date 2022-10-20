@@ -1,0 +1,22 @@
+# mac
+.DS_Store
+
+#idea
+
+.idea/
+target/
+*.iml
+*.class
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+## container data
+*/data/
+*/logs/
