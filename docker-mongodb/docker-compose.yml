@@ -1,0 +1,19 @@
+version: '3.1'
+services:
+  mongo:
+    image: mongo
+    restart: always
+    container_name: mongodb
+    command: [--auth]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_INITDB_DATABASE: test_db
+      MONGO_USERNAME: test_db
+      MONGO_PASSWORD: test_db
+    ports:
+      - "27018:27017"
+    volumes:
+      - ./data/mongo:/data/db
+      - ./mongo-init.sh:/docker-entrypoint-initdb.d/mongo-init.sh
+

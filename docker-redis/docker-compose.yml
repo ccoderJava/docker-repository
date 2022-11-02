@@ -1,17 +1,17 @@
 version: "3"
 services:
-    redis:
-        image: redis
-        container_name: redis
-        restart: always
-        volumes:
-            # redis rdb数据持久化目录
-            - /var/docker/docker-redis/data:/data
-            # redis notice日志目录,可以在redis.conf中关闭logfile目录配置
-            - /var/docker/docker-redis/logs:/logs
-            # redis 配置文件
-            - ./redis.conf:/usr/local/etc/redis/redis.conf
-        command:
-            redis-server /usr/local/etc/redis/redis.conf
-        ports:
-            - "6379:6379"
+  redis:
+    image: redis
+    container_name: redis
+    restart: always
+    volumes:
+      # redis rdb数据持久化目录
+      - /var/docker/docker-redis/data:/data
+      # redis notice日志目录,可以在redis.conf中关闭logfile目录配置
+      - /var/docker/docker-redis/logs:/logs
+      # redis 配置文件
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    command:
+        redis-server /usr/local/etc/redis/redis.conf
+    ports:
+        - "6379:6379"
