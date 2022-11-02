@@ -5,8 +5,12 @@ services:
         container_name: mysql
         restart: always
         volumes:
-            - /var/docker/docker-mysql/mysql:/var/lib/mysql
+            - ./data/mysql:/var/lib/mysql
+            - ./scripts/sql:/docker-entrypoint-initdb.d/
+            - /etc/localtime:/etc/localtime
         environment:
             - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=test_db
+            - TZ=Asia/Shanghai
         ports:
-            - "3306:3306"
+            - "3307:3306"
