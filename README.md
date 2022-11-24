@@ -16,3 +16,6 @@ The commonly used middleware docker-compose.yml and configuration Repository
 + 创建redis工作目录volumes:`/var/docker/docker-redis`
 + redis.conf 配置文件
 
+## docker-jenkins
+ + 工作目录`./data/jenkins_home`
+
