@@ -19,3 +19,6 @@ The commonly used middleware docker-compose.yml and configuration Repository
 ## docker-jenkins
  + 工作目录`./data/jenkins_home`
 
+## docker-nginx
++ 工作目录 `./data/docker_nginx/`
++ 网站目录www `./data/www/`
