@@ -18,5 +18,5 @@ target/
 *.rar
 
 ## container data
-*/data/
+**/data/
 */logs/
