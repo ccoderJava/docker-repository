@@ -22,3 +22,15 @@ The commonly used middleware docker-compose.yml and configuration Repository
 ## docker-nginx
 + 工作目录 `./data/docker_nginx/`
 + 网站目录www `./data/www/`
+
+
+## docker-nacos
++ 工作目录`./data/nacos/`
+  + 单机模式standalone `./data/single`
+  + 集群模式cluster `./data/cluster`
+
+## docker-graylog
++ 工作目录`./data/graylog/`
+
+## docker-flink
++ 工作目录`./data/flink/`
