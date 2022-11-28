@@ -3,7 +3,14 @@ The commonly used middleware docker-compose.yml and configuration Repository
 
 <!-- TOC -->
 * [docker-repository](#docker-repository)
+  * [docker-flink](#docker-flink)
+  * [docker-graylog](#docker-graylog)
+  * [docker-jenkins](#docker-jenkins)
+  * [docker-mongodb](#docker-mongodb)
   * [docker-mysql](#docker-mysql)
+  * [docker-nacos](#docker-nacos)
+  * [docker-nginx](#docker-nginx)
+  * [docker-rabbitmq](#docker-rabbitmq)
   * [docker-redis](#docker-redis)
 <!-- TOC -->
 
@@ -11,6 +18,11 @@ The commonly used middleware docker-compose.yml and configuration Repository
 + 创建工作目录volumes:`/var/docker/docker-mysql`
 + MySQL数据挂载到工作目录中`mysql`文件夹中
   + `/var/docker/docker-mysql/mysql:/var/lib/mysql`
+
+## docker-mongodb
++ 创建工作目录 `./data/`
++ 初始化配置
+  + `./mongo-init.sh` 设置默认账号密码、默认库
 
 ## docker-redis
 + 创建redis工作目录volumes:`/var/docker/docker-redis`
@@ -23,7 +35,6 @@ The commonly used middleware docker-compose.yml and configuration Repository
 + 工作目录 `./data/docker_nginx/`
 + 网站目录www `./data/www/`
 
-
 ## docker-nacos
 + 工作目录`./data/nacos/`
   + 单机模式standalone `./data/single`
@@ -31,6 +42,9 @@ The commonly used middleware docker-compose.yml and configuration Repository
 
 ## docker-graylog
 + 工作目录`./data/graylog/`
+
+## docker-rabbitmq
++ 工作目录`./data/rabbitmq/`
 
 ## docker-flink
 + 工作目录`./data/flink/`
