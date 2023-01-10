@@ -12,6 +12,8 @@ The commonly used middleware docker-compose.yml and configuration Repository
   * [docker-nginx](#docker-nginx)
   * [docker-rabbitmq](#docker-rabbitmq)
   * [docker-redis](#docker-redis)
+  * [docker-minio-standalone](#docker-minio-standalone)
+  * [docker-minio-cluster](#docker-minio-cluster)
 <!-- TOC -->
 
 ## docker-mysql
