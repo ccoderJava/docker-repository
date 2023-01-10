@@ -48,3 +48,8 @@ The commonly used middleware docker-compose.yml and configuration Repository
 
 ## docker-flink
 + 工作目录`./data/flink/`
+
+## docker-minio-standalone
++ 工作目录`./data/`
++ 控制台端口`9001`访问地址`http://localhost:9001`
+  + 默认账号密码`minioadmin`:`minioadmin`
